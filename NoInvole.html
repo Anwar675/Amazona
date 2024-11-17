@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function loadProduct() {
+            fetch('https://supersimplebackend.dev/products').then((response) => {
+                return response.json()
+            }).then((productData) => {
+                console.log(productData)
+            })
+        }
+
+        loadProduct()
+
+
+        async function loadPage() {
+            console.log('load page')
+        }
+        loadPage().then(() => {
+           
+        })
+    </script>
+</body>
+</html>
+
+
